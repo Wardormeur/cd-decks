@@ -1,0 +1,133 @@
+  <html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mentoring post-dojo</title>
+    <link rel="stylesheet" href="../bower_components/reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="../bower_components/cd-reveal-theme/dist/coderdojo.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="../bower_components/reveal.js/lib/css/zenburn.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? '../bower_components/reveal.js/css/print/pdf.css' : '../bower_components/reveal.js/css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section class="whitish">
+          <h1>Mentoring during nightfall: traps & tips</h1>
+          <h2>Creating a sushi card</h2>
+          <h2>Translating</h2>
+          <aside class="notes">
+            Quite young in the community, but eh ! 1y in the foundation now :)
+          </aside>
+        </section>
+        <section>
+          <h1>Creating a sushi card : the goal ?</h1>
+          <ul>
+            <li>Demonstrating a principle</li>
+            <li>Try to do something "specific"</li>
+            <li>Generic coding tips</li>
+            <li>Split it and take screenshot regurlarly/incremental save</li>
+            <li>Avoid writing guides about a language you just tried</li>
+          </ul>
+
+          <img class="fragment hidden-fragment" style="position:fixed; top: 30%; right: 13%" src="img/trap.jpg" width="300"/>
+          <aside class="notes">
+            Explaining variables, type manipulation & basic math implementation, for a first language
+            -> Then algorythm implementation/ whatever, but one by one as much as possible
+            Specific :
+             - usage of a tracker/sensor on smartphone; or touch; or camera
+             - usage of GPIO on raspberry;
+             - usage of keyboard on laptop
+            /me then only did i do an app demonstrating only one functionnality, slightly extended "shakIt"
+            Not speaking of files and so on, simply of being able to use functions rather than inlining everything
+            -> make them understand that's it's easier to read code when one function does one thing
+            --> Single Responsibility Principle
+            --> ex Scracth multi entity and global variable "state" conflict
+            Incremental save = git => better images for the guide
+            Normal workflow = "want to try this language"
+            -> Nobody expect 10y exp, but may not tbe able to explain "why this piece of code" to anybody
+            -> Confusion is big enough when you start a new language, don't overload it
+            /me AppInventor first app fruitNinja, contains everything because I was trying things out
+          </aside>
+        </section>
+        <section>
+          <h1>Creating a sushi card: phase 2</h1>
+          <ul>
+            <li>Get it proof read</li>
+            <li>Find some kids interested to test it</li>
+            <li>Share it!</li>
+          </ul>
+          <aside class="notes">
+            You know, language and 11pm writing with bourbon
+            Paper is great for kids to give some feedback, or use online inline-comments (TODO: provide ex)
+            -> comprehension rather than technicality
+            -> collect "how to do x ?"
+            --> let them dig !
+            The situation has been a bit unstable on the foundation side regarding submission of sushi cards
+            -> and i have a quite strong disagreement with Philip regarding strategy :p
+            -> push them to Gitbook and share a link on the forum for peer review from others mentors !
+          </aside>
+        </section>
+        <section>
+          <h1>Translating</h1>
+          <ul>
+            <li>Language switch</li>
+            <li>Verbosity</li>
+            <li>Tone</li>
+            <li>Images</li>
+          </ul>
+          <aside class="notes">
+            How many ppl here are not native Irish or speak fluently another language?
+            Language switch : avoid translating variable, the coding language WILL BE in english
+            -> Comment could be translated, but i think we should avoid them inline and put them into the sushi
+            French is incredibly verbose compared to English : translate the idea, not word by word
+            -> It may say what the original author wanted, but will be hard to read as a native
+            As French, and coming back from latin, we have another pronoun to differenciate formal from informal
+            -> It's not directly context based as it is in English
+            -> Relative to country in which the sushi card is used
+            -> I think for this kind of differences, and for consistency, a choice must be made w/ the rest of the community
+          </aside>
+        </section>
+        <section>
+          <h1>Commitment</h1>
+          <p>Or knowing how to finish a project</p>
+          <p>Or knowing when to say "Stop, i can't do it alone"</p>
+          <img src="img/takethis.jpg" width="300"/>
+          <aside class="notes">
+            Strongly relate, alas
+            I think one o the easy value of beeing a community is its part of co-working on different subject
+            Some of you are probably aware of the community meetings led by Pete/Ross/Nuala that
+            joins different dojos from a country of from multiple ones
+            Same could be done for translation? A one man job is tiring and depressing on the long run, don't stay alone
+          </aside>
+        </section>
+        <section>
+          Questions ?
+        </section>
+      </div>
+    </div>
+    <script src="../bower_components/reveal.js/js/reveal.js"></script>
+    <script src="../bower_components/reveal.js/lib/js/head.min.js"></script>
+    <script>
+      Reveal.initialize({
+        history: true,
+        mouseWheel: true,
+        dependencies: [
+          { src: '../bower_components/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '../bower_components/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '../bower_components/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '../bower_components/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '../bower_components/reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: '../bower_components/reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+  </body>
+</html>
